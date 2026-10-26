@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cucumber Club | Fresh & Green</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #103c2b;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    nav {
+      padding: 25px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h2 {
+      color: #caff70;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 7vw, 5rem);
+      color: #d4ff82;
+      animation: appear 1s ease-out;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin: 20px 0 30px;
+      color: #d6eadc;
+    }
+
+    .cucumber {
+      font-size: 100px;
+      animation: float 3s ease-in-out infinite;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 16px 30px;
+      background: #caff70;
+      color: #103c2b;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 50px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      background: white;
+      box-shadow: 0 0 25px #caff70;
+    }
+
+    .bubble {
+      position: absolute;
+      font-size: 35px;
+      opacity: 0.4;
+      animation: float 5s infinite ease-in-out;
+      pointer-events: none;
+    }
+
+    .b1 { top: 15%; left: 10%; }
+    .b2 { top: 65%; right: 10%; animation-delay: 1s; }
+    .b3 { bottom: 10%; left: 20%; animation-delay: 2s; }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #b6d9bd;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(-8deg); }
+      50% { transform: translateY(-25px) rotate(8deg); }
+    }
+
+    @keyframes appear {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <h2>🥒 Cucumber Club</h2>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+    </div>
+  </nav>
+
+  <main class="hero">
+    <div class="bubble b1">🌿</div>
+    <div class="bubble b2">🥒</div>
+    <div class="bubble b3">🍃</div>
+
+    <div class="cucumber">🥒</div>
+
+    <h1>Freshness You Can Crunch!</h1>
+
+    <p>
+      Fresh cucumbers, grown with love.<br>
+      Straight from our garden to your table!
+    </p>
+
+    <a class="btn" href="products.html">
+      Explore Our Cucumbers →
+    </a>
+  </main>
+
+  <footer>
+    © 2026 Cucumber Club | Fresh, Green & Delicious 🌱
+  </footer>
+</body>
+</html>
