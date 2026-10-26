@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Cucumbers | Cucumber Club</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0ffdb;
+      color: #16452d;
+    }
+
+    nav {
+      background: #103c2b;
+      color: white;
+      padding: 25px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h2 {
+      color: #caff70;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 35px;
+    }
+
+    header h1 {
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      color: #207444;
+      animation: appear 0.8s ease-out;
+    }
+
+    header p {
+      margin-top: 15px;
+      color: #52765b;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: 20px auto 60px;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px 20px;
+      text-align: center;
+      border-radius: 25px;
+      box-shadow: 0 8px 25px #174b2d12;
+      transition: 0.3s;
+      animation: appear 0.8s ease-out;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px #174b2d25;
+    }
+
+    .product-img {
+      font-size: 85px;
+      display: block;
+      margin-bottom: 20px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .card h2 {
+      margin-bottom: 12px;
+    }
+
+    .price {
+      color: #299653;
+      font-size: 25px;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    .buy {
+      display: inline-block;
+      background: #207444;
+      color: white;
+      padding: 13px 24px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .buy:hover {
+      background: #8abf38;
+      color: #103c2b;
+      transform: scale(1.05);
+    }
+
+    .back {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .back a {
+      color: #207444;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #103c2b;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(-5deg); }
+      50% { transform: translateY(-12px) rotate(5deg); }
+    }
+
+    @keyframes appear {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <h2>🥒 Cucumber Club</h2>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Our Fresh Cucumbers 🥒</h1>
+    <p>Hand-picked freshness for every kitchen!</p>
+  </header>
+
+  <main class="products">
+
+    <article class="card">
+      <span class="product-img">🥒</span>
+      <h2>Classic Cucumbers</h2>
+      <p>Fresh, crunchy and delicious.</p>
+      <div class="price">€2.50 / kg</div>
+      <a class="buy"
+         href="https://wa.me/393331234567?text=Hello!%20I%20want%20to%20buy%20classic%20cucumbers."
+         target="_blank" rel="noopener">
+        Order Now →
+      </a>
+    </article>
+
+    <article class="card">
+      <span class="product-img">🥒</span>
+      <h2>Mini Cucumbers</h2>
+      <p>Perfect for snacks and salads.</p>
+      <div class="price">€3.00 / kg</div>
+      <a class="buy"
+         href="https://wa.me/393331234567?text=Hello!%20I%20want%20to%20buy%20mini%20cucumbers."
+         target="_blank" rel="noopener">
+        Order Now →
+      </a>
+    </article>
+
+    <article class="card">
+      <span class="product-img">🌱</span>
+      <h2>Garden Fresh Pack</h2>
+      <p>A fresh selection from our garden.</p>
+      <div class="price">€5.00 / pack</div>
+      <a class="buy"
+         href="https://wa.me/393331234567?text=Hello!%20I%20want%20to%20buy%20a%20garden%20fresh%20pack."
+         target="_blank" rel="noopener">
+        Order Now →
+      </a>
+    </article>
+
+  </main>
+
+  <div class="back">
+    <a href="index.html">← Back to Home</a>
+  </div>
+
+  <footer>
+    Fresh from the garden, with love 💚
+  </footer>
+</body>
+</html>
